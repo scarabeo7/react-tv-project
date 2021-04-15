@@ -1,5 +1,5 @@
 import './App.css';
-import AllEpisode from './component/AllEpisode';
+import Episode from './component/Episode';
 import Footer from './component/Footer';
 import Header from './component/Header';
 import data from "./data/data.json"
@@ -8,7 +8,8 @@ function App() {
   return (
     <div>
       <Header />
-      <AllEpisode  data = {data}/>
+     
+      <Episode  data = {data}/>
       <Footer />
     </div>
   );
