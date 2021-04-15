@@ -6,6 +6,14 @@ body {
   text-align: center;
 }
 
+.episode-search {
+  margin-left: 2rem;
+}
+
+input {
+  font-size: 1.2rem;
+}
+
 h2 {
   border: 1px solid;
   padding: 10px;
@@ -49,4 +57,18 @@ footer hr {
   border: 0;
   border-top: 1px solid #758da5;
   margin: 1rem 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .episode-search {
+    margin-left: 3.4rem;
+  }
+
+  .episode-container {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
