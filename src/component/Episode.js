@@ -7,8 +7,8 @@ const Episode = ({ data }) => {
   // live search functionality to filter through episode name and summary
   const filteredInput = data.filter((char) => {
     return (
-      char.name.toLowerCase().includes(searchEpisode) ||
-      char.summary.toLowerCase().includes(searchEpisode)
+      char.name.toLowerCase().includes(searchEpisode.toLocaleLowerCase()) ||
+      char.summary.toLowerCase().includes(searchEpisode.toLocaleLowerCase())
     );
   });
   // function adds "0" to number to give season and number a double digit //
